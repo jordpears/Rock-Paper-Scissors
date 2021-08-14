@@ -28,7 +28,7 @@ public class RockPaperScissorsController {
 
         int numberOfGames = inputHandler.getIntegerInput();
 
-        System.out.println("You have selected to play " + numberOfGames + " games.\n");
+        System.out.println("You have selected to play " + numberOfGames + " game(s).\n");
 
         return numberOfGames;
     }
