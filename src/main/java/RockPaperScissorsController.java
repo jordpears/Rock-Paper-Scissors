@@ -24,9 +24,13 @@ public class RockPaperScissorsController {
     }
 
     public int getNumberOfGames(){
-        System.out.println("How many rounds would you like to play?");
+        System.out.println("How many rounds would you like to play? (0 - 1000)");
 
         int numberOfGames = inputHandler.getIntegerInput();
+
+        while(numberOfGames < 0 || numberOfGames > 1000){
+            numberOfGames = inputHandler.getIntegerInput();
+        }
 
         System.out.println("You have selected to play " + numberOfGames + " game(s).\n");
 

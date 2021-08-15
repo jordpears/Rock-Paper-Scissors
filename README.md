@@ -20,6 +20,9 @@ I also added tests for the controller and service utilising mocking and Junit5.
 
 The only dependencies I have are Junit5, Mockito and a plugin for a newer version surefire to ensure the tests run through mvn.
 
+I could have extended my approach further by adding dependency injection of the service into the controller and removed exposure of the service
+to the Main class. Given the simplicity of the task this was not required, however should the complexity increase this would be my next action.
+
 ### Running:
 _Built with Java11_
 
